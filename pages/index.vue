@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="cases__body--item--links">
-                        <a href="#">
+                        <a href="https://www.behance.net/gallery/198448901/OnePlace-E-commerce-UXUI">
                             <img src="@/assets/img/behance.svg" alt="Кейс на Behance">
                             <span>Кейс на Behance</span>
                         </a>
@@ -57,20 +57,20 @@
                             class="cases__body--item--header--qayum">
 
                         <div>
-                            <small>Мобильные приложения</small>
-                            <span>Qauym</span>
+                            <small>Онлайн-магазин</small>
+                            <span>DesignPack</span>
                         </div>
                     </div>
 
                     <div class="cases__body--item--footer">
-                        <div class="cases__body--item--footer--type" style="background: #84d97d;">
-                            <span>mobile</span>
+                        <div class="cases__body--item--footer--type" style="background: #7da2d9;">
+                            <span>e-commerce</span>
                         </div>
 
                     </div>
 
                     <div class="cases__body--item--links">
-                        <a href="#">
+                        <a href="https://www.behance.net/gallery/198712125/UXUI-platforma-dlja-prodazhi-assetov">
                             <img src="@/assets/img/behance.svg" alt="Кейс на Behance">
                             <span>Кейс на Behance</span>
                         </a>
@@ -83,11 +83,11 @@
 
                 <div class="cases__body--item">
                     <div class="cases__body--item--header">
-                        <img src="@/assets/img/svecno_logo.svg" alt="Svecno Веб-сайт">
+                        <span></span>
 
                         <div>
-                            <small>Веб-сайт</small>
-                            <span>Svecno</span>
+                            <small>Онлайн платформа</small>
+                            <span>Most</span>
                         </div>
                     </div>
 
@@ -99,7 +99,7 @@
                     </div>
 
                     <div class="cases__body--item--links">
-                        <a href="#">
+                        <a href="https://www.behance.net/gallery/198710937/UXUI-E-commerce-MostShop">
                             <img src="@/assets/img/behance.svg" alt="Кейс на Behance">
                             <span>Кейс на Behance</span>
                         </a>
@@ -128,7 +128,7 @@
                     </div>
 
                     <div class="cases__body--item--links">
-                        <a href="#">
+                        <a href="https://www.behance.net/gallery/198584471/E-commerce-UXUI-Branding-Merch-Shop">
                             <img src="@/assets/img/behance.svg" alt="Кейс на Behance">
                             <span>Кейс на Behance</span>
                         </a>
@@ -140,12 +140,12 @@
                 </div>
                 <div class="cases__body--item">
                     <div class="cases__body--item--header">
-                        <img src="@/assets/img/study_logo.svg" alt="StudyNow Веб-сайт"
-                            class="cases__body--item--header--study">
+                        <span></span>
+                        <!-- <img src="@/assets/img/study_logo.svg" alt="StudyNow Веб-сайт" -->
 
                         <div>
-                            <small>Веб-сайт</small>
-                            <span>StudyNow</span>
+                            <small>Онлайн платформа</small>
+                            <span>RustShop</span>
                         </div>
                     </div>
 
@@ -157,7 +157,7 @@
                     </div>
 
                     <div class="cases__body--item--links">
-                        <a href="#">
+                        <a href="https://www.behance.net/gallery/198744933/UXUI-Skins-trading-RustShop">
                             <img src="@/assets/img/behance.svg" alt="Кейс на Behance">
                             <span>Кейс на Behance</span>
                         </a>
@@ -965,6 +965,7 @@ export default {
 
 
             &--item {
+                border: 2px solid rgba(255, 255, 255, 0.1);
                 flex: 1;
                 height: 803px;
                 border-radius: 30px;
@@ -1197,6 +1198,8 @@ export default {
                     }
                 }
 
+
+
                 &:nth-child(1) {
                     background-color: rgba($color: #000000, $alpha: 0.8);
                     background-image: url('@/assets/img/oneplace_bg.png');
@@ -1211,22 +1214,25 @@ export default {
                 }
 
                 &:nth-child(2) {
-                    background-color: rgba($color: #708ed7, $alpha: 0.8);
+                    background-color: rgba($color: #0f0f0f, $alpha: 0.8);
                     background-image: url('@/assets/img/qayum_bg.png');
                     background-repeat: no-repeat;
                     background-position: bottom right;
-
 
 
                     @media (max-width: 1500px) {
                         background-size: 80% 80%;
                     }
 
+                    @media (max-width: 1024px) {
+                        background-size: 100% 100%;
+                    }
                 }
 
                 &:nth-child(3) {
                     background-image: url('@/assets/img/svecno_bg.png');
                     background-repeat: no-repeat;
+                    background-position: top center;
                     background-size: 100% 100%;
                 }
 
@@ -1243,7 +1249,7 @@ export default {
                 }
 
                 &:nth-child(5) {
-                    background-color: rgba($color: #e6b2fe, $alpha: 0.9);
+                    background-color: rgba($color: #000, $alpha: 0.9);
                     background-image: url('@/assets/img/study_bg.png');
                     background-repeat: no-repeat;
                     background-size: 100% 100%;
