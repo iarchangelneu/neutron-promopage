@@ -6,10 +6,10 @@
         </NuxtLink>
 
         <div class="header__links" :class="{ scrolled: isScrolled }">
-            <div class="select_lang">
+            <!-- <div class="select_lang">
                 <span>RU</span>
                 <img src="@/assets/img/drop_arrow.svg" alt="Выбрать язык">
-            </div>
+            </div> -->
 
             <a href="#cases">Кейсы</a>
             <a href="#contacts">Оставить заявку</a>
@@ -22,10 +22,10 @@
         </NuxtLink>
 
         <div class="header__links">
-            <div class="select_lang">
+            <!-- <div class="select_lang">
                 <span>RU</span>
                 <img src="@/assets/img/drop_arrow.svg" alt="Выбрать язык">
-            </div>
+            </div> -->
 
             <a href="#cases">Кейсы</a>
         </div>
@@ -204,12 +204,19 @@ export default {
             text-decoration: none;
         }
 
+
+
+
+
         a {
+            &:first-child {
+                padding-left: 20px;
+            }
+
             &:last-child {
                 border-radius: 64px;
                 padding: 12px 25px 15px 25px;
                 background: #aa7cff;
-
                 transition: all .3s ease;
 
                 &:hover {

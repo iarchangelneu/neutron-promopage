@@ -44,7 +44,7 @@
                             <img src="@/assets/img/behance.svg" alt="Кейс на Behance">
                             <span>Кейс на Behance</span>
                         </a>
-                        <a href="#">
+                        <a href="/pdf/OnePlace.pdf" download target="_blank">
                             <img src="@/assets/img/doc.svg" alt="Скачать в PDF">
                             <span>Скачать в PDF</span>
                         </a>
@@ -74,7 +74,7 @@
                             <img src="@/assets/img/behance.svg" alt="Кейс на Behance">
                             <span>Кейс на Behance</span>
                         </a>
-                        <a href="#">
+                        <a href="/pdf/DesignPack.pdf" download target="_blank">
                             <img src="@/assets/img/doc.svg" alt="Скачать в PDF">
                             <span>Скачать в PDF</span>
                         </a>
@@ -103,7 +103,7 @@
                             <img src="@/assets/img/behance.svg" alt="Кейс на Behance">
                             <span>Кейс на Behance</span>
                         </a>
-                        <a href="#">
+                        <a href="/pdf/MOST.pdf" download target="_blank">
                             <img src="@/assets/img/doc.svg" alt="Скачать в PDF">
                             <span>Скачать в PDF</span>
                         </a>
@@ -132,7 +132,7 @@
                             <img src="@/assets/img/behance.svg" alt="Кейс на Behance">
                             <span>Кейс на Behance</span>
                         </a>
-                        <a href="#">
+                        <a href="/pdf/MerchShop.pdf" download target="_blank">
                             <img src="@/assets/img/doc.svg" alt="Скачать в PDF">
                             <span>Скачать в PDF</span>
                         </a>
@@ -161,7 +161,7 @@
                             <img src="@/assets/img/behance.svg" alt="Кейс на Behance">
                             <span>Кейс на Behance</span>
                         </a>
-                        <a href="#">
+                        <a href="/pdf/Rust.pdf" download target="_blank">
                             <img src="@/assets/img/doc.svg" alt="Скачать в PDF">
                             <span>Скачать в PDF</span>
                         </a>
@@ -295,11 +295,11 @@
                         <span>Контактные данные</span>
 
                         <div class="contactus__body--form--userinfo--inputs">
-                            <input type="text" id="budget" name="budget" v-model="feedback.name"
+                            <input type="text" id="budget" name="budget" v-model="feedback.client_name"
                                 placeholder="Как вас зовут?" ref="name">
-                            <input type="text" id="budget" name="budget" v-model="feedback.com_method"
+                            <input type="text" id="budget" name="budget" v-model="feedback.client_contact"
                                 placeholder="Ваш номер телефона, почта или месседжер" ref="com_method">
-                            <input type="text" id="budget" name="budget" v-model="feedback.commentary"
+                            <input type="text" id="budget" name="budget" v-model="feedback.comment"
                                 placeholder="Комментарий (по желанию)">
 
                             <button @click="send_feedback">Отправить заявку</button>
@@ -326,15 +326,16 @@
     </Head>
 </template>
 <script>
+import axios from 'axios';
 export default {
     data() {
         return {
             feedback: {
                 type: '',
                 budget: '',
-                name: '',
-                com_method: '',
-                commentary: '',
+                client_name: '',
+                client_contact: '',
+                comment: '',
             },
             types: [
                 {
@@ -373,13 +374,14 @@ export default {
         }
     },
     methods: {
-        send_feedback() {
-            if (this.feedback.name.length <= 0) {
+
+        async send_feedback() {
+            if (this.feedback.client_name.length <= 0) {
                 this.$refs.name.classList.add('error')
 
                 return
             }
-            else if (this.feedback.com_method.length <= 0) {
+            else if (this.feedback.client_contact.length <= 0) {
                 this.$refs.com_method.classList.add('error')
 
                 return
@@ -387,15 +389,27 @@ export default {
             this.$refs.name.classList.remove('error')
             this.$refs.com_method.classList.remove('error')
 
-            this.open_success()
 
-            this.feedback = {
-                type: '',
-                budget: '',
-                name: '',
-                com_method: '',
-                commentary: '',
-            }
+            const path = 'https://neutron-agency.com/api/main/new-application/'
+            axios
+                .post(path, this.feedback)
+                .then(res => {
+                    console.log(res)
+
+
+                    this.open_success()
+
+                    this.feedback = {
+                        type: '',
+                        budget: '',
+                        client_name: '',
+                        client_contact: '',
+                        comment: '',
+                    }
+                })
+                .catch(error => {
+                    console.log(error)
+                })
 
         },
         handleInput(event) {
@@ -424,16 +438,16 @@ export default {
 <style lang="scss" scoped>
 .page {
     position: relative;
-    margin-bottom: 800px;
+    margin-bottom: 1000px;
     z-index: 2;
     background: #111;
 
     @media (max-width: 1500px) {
-        margin-bottom: 630px;
+        margin-bottom: 1000px;
     }
 
     @media (max-width: 1024px) {
-        margin-bottom: 530px;
+        margin-bottom: 1000px;
     }
 
     @media (max-width: 500px) {
@@ -1199,7 +1213,6 @@ export default {
                 }
 
 
-
                 &:nth-child(1) {
                     background-color: rgba($color: #000000, $alpha: 0.8);
                     background-image: url('@/assets/img/oneplace_bg.png');
@@ -1218,22 +1231,16 @@ export default {
                     background-image: url('@/assets/img/qayum_bg.png');
                     background-repeat: no-repeat;
                     background-position: bottom right;
+                    background-size: 100% 100%;
 
 
-                    @media (max-width: 1500px) {
-                        background-size: 80% 80%;
-                    }
-
-                    @media (max-width: 1024px) {
-                        background-size: 100% 100%;
-                    }
                 }
 
                 &:nth-child(3) {
                     background-image: url('@/assets/img/svecno_bg.png');
                     background-repeat: no-repeat;
                     background-position: top center;
-                    background-size: 100% 100%;
+                    background-size: 100% auto;
                 }
 
                 &:nth-child(4) {
@@ -1252,7 +1259,7 @@ export default {
                     background-color: rgba($color: #000, $alpha: 0.9);
                     background-image: url('@/assets/img/study_bg.png');
                     background-repeat: no-repeat;
-                    background-size: 100% 100%;
+                    background-size: 100% auto;
                 }
 
                 &:nth-child(6) {
@@ -1304,7 +1311,7 @@ export default {
 
     .main {
         padding: 0 40px;
-        height: 100vh;
+        height: 95vh;
         width: 100%;
 
         display: flex;
