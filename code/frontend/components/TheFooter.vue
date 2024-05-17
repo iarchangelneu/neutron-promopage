@@ -51,7 +51,7 @@
 <style lang="scss" scoped>
 footer {
     padding: 0 60px;
-    min-height: 646px;
+    min-height: 546px;
     position: fixed;
     bottom: 0px;
     left: 0px;
