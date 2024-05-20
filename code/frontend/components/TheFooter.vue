@@ -7,33 +7,33 @@
             </div>
 
             <div class="footer__socials">
-                <a href="tel:++7 700 557-57-09">+7 700 557-57-09</a>
+                <a href="tel:+7 700 557-57-09">+7 700 557-57-09</a>
 
                 <div>
 
-                    <a href="https://wa.me/+77005575709">
+                    <a href="https://wa.me/+77005575709" target="_blank">
                         <img src="@/assets/img/wa_social.svg" alt="Наш WhatsApp">
                     </a>
-                    <a href="https://t.me/IlyaSushin">
+                    <a href="https://t.me/IlyaSushin" target="_blank">
                         <img src="@/assets/img/tg_social.svg" alt="Наш Telegram">
                     </a>
-                    <a href="https://www.behance.net/neutronagency">
+                    <a href="https://www.behance.net/neutronagency" target="_blank">
                         <img src="@/assets/img/beh_social.svg" alt="Наш Behance">
                     </a>
                 </div>
             </div>
 
             <div class="footer__mobile">
-                <a href="tel:++7 700 557-57-09">+7 700 557-57-09</a>
+                <a href="tel:+7 700 557-57-09">+7 700 557-57-09</a>
 
                 <div>
-                    <a href="https://wa.me/+77005575709">
+                    <a href="https://wa.me/+77005575709" target="_blank">
                         <img src="@/assets/img/wa_social.svg" alt="Наш WhatsApp">
                     </a>
-                    <a href="https://t.me/IlyaSushin">
+                    <a href="https://t.me/IlyaSushin" target="_blank">
                         <img src="@/assets/img/tg_social.svg" alt="Наш Telegram">
                     </a>
-                    <a href="https://www.behance.net/neutronagency">
+                    <a href="https://www.behance.net/neutronagency" target="_blank">
                         <img src="@/assets/img/beh_social.svg" alt="Наш Behance">
                     </a>
                     <div>

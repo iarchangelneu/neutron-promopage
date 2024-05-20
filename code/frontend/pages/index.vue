@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="cases__body--item--links">
-                        <a href="https://www.behance.net/gallery/198448901/OnePlace-E-commerce-UXUI">
+                        <a href="https://www.behance.net/gallery/198448901/OnePlace-E-commerce-UXUI" target="_blank">
                             <img src="@/assets/img/behance.svg" alt="Кейс на Behance">
                             <span>Кейс на Behance</span>
                         </a>
@@ -70,7 +70,8 @@
                     </div>
 
                     <div class="cases__body--item--links">
-                        <a href="https://www.behance.net/gallery/198712125/UXUI-platforma-dlja-prodazhi-assetov">
+                        <a href="https://www.behance.net/gallery/198712125/UXUI-platforma-dlja-prodazhi-assetov"
+                            target="_blank">
                             <img src="@/assets/img/behance.svg" alt="Кейс на Behance">
                             <span>Кейс на Behance</span>
                         </a>
@@ -99,7 +100,7 @@
                     </div>
 
                     <div class="cases__body--item--links">
-                        <a href="https://www.behance.net/gallery/198710937/UXUI-E-commerce-MostShop">
+                        <a href="https://www.behance.net/gallery/198710937/UXUI-E-commerce-MostShop" target="_blank">
                             <img src="@/assets/img/behance.svg" alt="Кейс на Behance">
                             <span>Кейс на Behance</span>
                         </a>
@@ -128,7 +129,8 @@
                     </div>
 
                     <div class="cases__body--item--links">
-                        <a href="https://www.behance.net/gallery/198584471/E-commerce-UXUI-Branding-Merch-Shop">
+                        <a href="https://www.behance.net/gallery/198584471/E-commerce-UXUI-Branding-Merch-Shop"
+                            target="_blank">
                             <img src="@/assets/img/behance.svg" alt="Кейс на Behance">
                             <span>Кейс на Behance</span>
                         </a>
@@ -157,7 +159,7 @@
                     </div>
 
                     <div class="cases__body--item--links">
-                        <a href="https://www.behance.net/gallery/198744933/UXUI-Skins-trading-RustShop">
+                        <a href="https://www.behance.net/gallery/198744933/UXUI-Skins-trading-RustShop" target="_blank">
                             <img src="@/assets/img/behance.svg" alt="Кейс на Behance">
                             <span>Кейс на Behance</span>
                         </a>
