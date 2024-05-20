@@ -7,33 +7,33 @@
             </div>
 
             <div class="footer__socials">
-                <a href="tel:++7 777 777 77 77">+7 777 777 77 77</a>
+                <a href="tel:++7 700 557-57-09">+7 700 557-57-09</a>
 
                 <div>
 
-                    <a href="#">
+                    <a href="https://wa.me/+77005575709">
                         <img src="@/assets/img/wa_social.svg" alt="Наш WhatsApp">
                     </a>
-                    <a href="#">
+                    <a href="https://t.me/IlyaSushin">
                         <img src="@/assets/img/tg_social.svg" alt="Наш Telegram">
                     </a>
-                    <a href="#">
+                    <a href="https://www.behance.net/neutronagency">
                         <img src="@/assets/img/beh_social.svg" alt="Наш Behance">
                     </a>
                 </div>
             </div>
 
             <div class="footer__mobile">
-                <a href="tel:++7 777 777 77 77">+7 777 777 77 77</a>
+                <a href="tel:++7 700 557-57-09">+7 700 557-57-09</a>
 
                 <div>
-                    <a href="#">
+                    <a href="https://wa.me/+77005575709">
                         <img src="@/assets/img/wa_social.svg" alt="Наш WhatsApp">
                     </a>
-                    <a href="#">
+                    <a href="https://t.me/IlyaSushin">
                         <img src="@/assets/img/tg_social.svg" alt="Наш Telegram">
                     </a>
-                    <a href="#">
+                    <a href="https://www.behance.net/neutronagency">
                         <img src="@/assets/img/beh_social.svg" alt="Наш Behance">
                     </a>
                     <div>

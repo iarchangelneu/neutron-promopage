@@ -979,7 +979,8 @@ export default {
 
 
             &--item {
-                border: 2px solid rgba(255, 255, 255, 0.1);
+                // border: 2px solid rgba(255, 255, 255, 0.1);
+                Box-shadow: 0px 2px 0px rgba(255, 255, 255, 0.1), 0px -2px 0px rgba(255, 255, 255, 0.1), 2px 0px 0px rgba(255, 255, 255, 0.1), -2px 0px 0px rgba(255, 255, 255, 0.1);
                 flex: 1;
                 height: 803px;
                 border-radius: 30px;
@@ -1016,9 +1017,8 @@ export default {
                     position: absolute;
                     bottom: 0;
                     left: 0;
-                    right: 0;
                     width: 100%;
-                    border-radius: 30px;
+                    border-radius: 30px 30px 0 0;
 
                     backdrop-filter: blur(20px);
                     background: rgba(17, 17, 17, 0.7);
@@ -1028,7 +1028,7 @@ export default {
                     padding: 20px;
                     gap: 20px;
 
-                    transition: all .3s ease;
+                    transition: all .6s linear;
                     opacity: 0;
 
 
