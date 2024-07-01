@@ -7,7 +7,7 @@
             </div>
 
             <div class="footer__socials">
-                <a href="tel:+7 700 557-57-09">+7 700 557-57-09</a>
+                <a href="tel:+77770818013">+7 777 081 80 13</a>
 
                 <div>
 
@@ -24,7 +24,7 @@
             </div>
 
             <div class="footer__mobile">
-                <a href="tel:+7 700 557-57-09">+7 700 557-57-09</a>
+                <a href="tel:+77770818013">+7 777 081 80 13</a>
 
                 <div>
                     <a href="https://wa.me/+77005575709" target="_blank">
