@@ -116,6 +116,8 @@ export default {
         align-items: center;
         gap: 30px;
 
+
+
         .select_lang {
             display: flex;
             align-items: center;
@@ -146,6 +148,11 @@ export default {
         align-items: center;
         gap: 10px;
         text-decoration: none;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
 
         span {
             font-weight: 400;
